@@ -2,6 +2,7 @@ import Prime
 import Primitive
 import math
 import OAEP
+
 # RSA Key Generation Function
 def RSAKG(L : int , e : int ) -> tuple:
     """
@@ -28,7 +29,6 @@ def RSAKG(L : int , e : int ) -> tuple:
     return ((n,e),(n,d))
 
 
-
 # public len k+m = `k`
 
 # The Encryption Function
@@ -52,12 +52,12 @@ def RSA_OAEP_Decrypt(PrivateKey : tuple , C : bytearray  , k) -> bytearray:
 
 
 
-m = "hello你好"*10
-public , private = RSAKG(1024, 65537)
-message = bytearray(m.encode('utf8'))
-cipher , k = RSA_OAEP_Encrypt(public, message)
-recovered = RSA_OAEP_Decrypt(private , cipher , k)
-c = recovered.decode('utf8')
-print(c)
+# m = "hello你好"*10
+# public , private = RSAKG(1024, 65537)
+# message = bytearray(m.encode('utf8'))
+# cipher , k = RSA_OAEP_Encrypt(public, message)
+# recovered = RSA_OAEP_Decrypt(private , cipher , k)
+# c = recovered.decode('utf8')
+# print(c)
 
 

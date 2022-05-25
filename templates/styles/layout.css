@@ -1,0 +1,67 @@
+#ProgramTitle{
+    position: fixed;
+    top: 10px;
+    left: 600px;
+    display: flex;
+    gap: 1rem;
+}
+
+input{
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.usertext{
+    display: flex;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+#EncryptPrompt{
+    position: fixed;
+    top: 390px;
+    left: 50px;
+}
+
+
+
+#DecryptPrompt{
+    position: fixed;
+    top: 590px;
+    left: 50px;
+}
+
+.trigger{
+    display: flex;
+    gap: 1rem;
+}
+
+.hint{
+    font-size: large;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+#cipherbox{
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 390px;
+    right: 100px;
+    font-size: small;
+    height: 100px;
+    width: 600px;
+}
+
+
+#dcipherbox{
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 650px;
+    right: 100px;
+    font-size: small;
+    height: 100px;
+    width: 600px;
+}

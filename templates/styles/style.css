@@ -1,0 +1,32 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+*{ font-family : "JetBrains Mono"; }  /* use jetbrains mono font */
+html, body { height: 100%; overflow: hidden} /* disable scrolling bar */
+
+/* colorize the background */
+body{
+    height : 850px;
+    width : 1375px ;
+    background: rgb(238,174,202);
+    background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.label{
+    width : 300px;
+}
+
+/* make long text fit in small div box */
+div{
+    word-wrap: break-word;
+}
+
+img{
+    cursor: pointer;
+}
+
+.keypair{
+    font-size: small;
+}

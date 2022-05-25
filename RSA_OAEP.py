@@ -30,6 +30,8 @@ def RSAKG(L : int , e : int ) -> tuple:
 
 
 # public len k+m = `k`
+# Why there is a `k` parameter ?
+# 
 
 # The Encryption Function
 def RSA_OAEP_Encrypt(PublicKey : tuple, M  : bytearray ) -> tuple:
@@ -37,7 +39,7 @@ def RSA_OAEP_Encrypt(PublicKey : tuple, M  : bytearray ) -> tuple:
     EM = OAEP.OAEP_Encode(M,k)          # Encoded Message
     IM = Primitive.OS2IP(EM)            # Integer Message
     IC = Primitive.RSAEP(PublicKey, IM) # Integer Cipher
-    OC = Primitive.I2OSP(IC, 1024)         # OctetString Cipher
+    OC = Primitive.I2OSP(IC, 512)         # OctetString Cipher
     return OC,k
 
 # Then Decryption Function

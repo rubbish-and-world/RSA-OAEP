@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/label.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/style.css">
         <title>RSA-OAEP</title>
     </head>
     <body>
-        <div>Enter your message :</div>
-        <input type="text" id='message'>
-        <button onclick="encrypt()">encrypt!</button>
+        
+        <!--KG-->
+        <div id="ProgramTitle">
+            <img width=70 height=50  src="images/kg.svg" onclick="GenerateKey()">
+            <div >Generate RSA key pair</div>
+        </div>
+
+        <img width=70 height=50 src="images/key.svg" onclick="clearpage()">
+
+        <!--encrypt-->
+        <div id="EncryptPrompt">
+
+            <div class="trigger">
+                <img width=70 height=50 src="images/message.svg" onclick="encrypt()">
+                <div class="hint">Click icon to encrypt</div>
+            </div>
+
+            <div class="usertext">
+                <div class="label" >Enter your message :</div>
+                <input type="text" id='message'>
+            </div>
+
+            <div class="usertext">
+                <div class="label" >Enter your public key :</div>
+                <input type="text" id='userPublicKey'>
+            </div>
+
+        </div>
+
+
+
+
+        <!--decrypt-->
+        <div id="DecryptPrompt">
+
+            <div class="trigger">
+                <img width=70 height=50 src="images/lock.svg" onclick="decrypt()" >
+                <div class="hint">Click icon to decrypt</div>
+            </div>
+
+            <div class="usertext">
+                <div class="label" >Enter your cipher :</div>
+                <input type="text" id='cipher'>
+            </div>
+
+            <div class="usertext">
+                <div class="label" >Enter your private key :</div>
+                <input type="text" id='userPrivateKey'>
+            </div>
+
+            <div class="usertext">
+                <div class="label" >Enter your parameter k :</div>
+                <input type="text" id='k'>
+            </div>
+
+        </div>
+
+
 
     </body>
 
 
     <script type="text/javascript" src="/eel.js"></script>
-    <script type="text/javascript" src="scripts/anime.min.js"></script>
     <script type="text/javascript" src="scripts/basic.js"></script>
 </html>

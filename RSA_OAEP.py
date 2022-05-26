@@ -28,10 +28,7 @@ def RSAKG(L : int , e : int ) -> tuple:
 
     return ((n,e),(n,d))
 
-
 # public len k+m = `k`
-# Why there is a `k` parameter ?
-# 
 
 # The Encryption Function
 def RSA_OAEP_Encrypt(PublicKey : tuple, M  : bytearray ) -> tuple:
@@ -54,7 +51,7 @@ def RSA_OAEP_Decrypt(PrivateKey : tuple , C : bytearray  , k) -> bytearray:
 
 
 
-# m = "hello你好"*10
+# m = "hello你好😃"
 # public , private = RSAKG(1024, 65537)
 # message = bytearray(m.encode('utf8'))
 # cipher , k = RSA_OAEP_Encrypt(public, message)

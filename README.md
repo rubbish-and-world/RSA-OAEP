@@ -9,6 +9,8 @@ $ python3 main.py
 
 ![GUIpreview](https://github.com/rubbish-and-world/RSA-OAEP/GUI.png)
 
+![Usagepreview](https://github.com/rubbish-and-world/RSAES_OAEP/usage.png)
+
 --------
 
 
